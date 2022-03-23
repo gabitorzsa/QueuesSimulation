@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="559.7708333333333" y="1008.0">simulation.model.SimulationVariables</node>
+    <node x="932.860681216931" y="1374.0">simulation.SimulationManager</node>
+    <node x="1578.9409722222217" y="0.0">simulation.model.Task</node>
+    <node x="1578.141931216931" y="679.0">simulation.strategy.Strategy</node>
+    <node x="1438.141931216931" y="816.5">simulation.strategy.ConcreteStrategyQueue</node>
+    <node x="1167.579431216931" y="783.0">simulation.SelectionPolicy</node>
+    <node x="1718.141931216931" y="816.5">simulation.strategy.ConcreteStrategyTime</node>
+    <node x="32.08333333333326" y="1484.5">ui.SimulationScreen</node>
+    <node x="884.526752645502" y="1074.5">file.FileManagerImpl</node>
+    <node x="1354.141931216931" y="974.0">simulation.Scheduler</node>
+    <node x="0.0" y="1007.0">ui.QueuePanel</node>
+    <node x="797.776752645502" y="805.5">file.FileManager</node>
+    <node x="459.08333333333326" y="1341.0">ui.SetupScreen</node>
+    <node x="1186.7326388888885" y="234.0">simulation.Server</node>
+    <node x="653.2708333333333" y="389.5">utils.CompareTasksArrivalTime</node>
+    <node x="524.266931216931" y="1906.0">ui.UIManager</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ui.SimulationScreen" target="simulation.model.SimulationVariables">
+      <point x="98.75" y="-94.0" />
+      <point x="328.33333333333326" y="1291.0" />
+      <point x="572.0833333333333" y="1291.0" />
+      <point x="-86.1875" y="104.5" />
+    </edge>
+    <edge source="utils.CompareTasksArrivalTime" target="simulation.model.Task">
+      <point x="0.0" y="-27.0" />
+      <point x="767.2708333333333" y="184.0" />
+      <point x="1613.1076388888885" y="184.0" />
+      <point x="-47.83333333333326" y="72.0" />
+    </edge>
+    <edge source="simulation.Server" target="simulation.model.Task">
+      <point x="-67.25" y="-182.5" />
+      <point x="1253.9826388888885" y="194.0" />
+      <point x="1626.774305555555" y="194.0" />
+      <point x="-34.16666666666674" y="72.0" />
+    </edge>
+    <edge source="simulation.Scheduler" target="simulation.Server">
+      <point x="-17.9375" y="-138.5" />
+      <point x="1479.704431216931" y="924.0" />
+      <point x="1427.641931216931" y="924.0" />
+      <point x="1427.641931216931" y="659.0" />
+      <point x="1338.0451388888885" y="659.0" />
+      <point x="16.8125" y="182.5" />
+    </edge>
+    <edge source="simulation.Scheduler" target="simulation.strategy.ConcreteStrategyTime">
+      <point x="89.6875" y="-138.5" />
+      <point x="1587.329431216931" y="944.0" />
+      <point x="1847.641931216931" y="944.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="simulation.SimulationManager" target="utils.CompareTasksArrivalTime">
+      <point x="-56.0" y="-204.5" />
+      <point x="1030.860681216931" y="1291.0" />
+      <point x="787.276752645502" y="1291.0" />
+      <point x="787.276752645502" y="619.0" />
+      <point x="767.2708333333333" y="619.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="simulation.SimulationManager" target="ui.UIManager">
+      <point x="38.5" y="204.5" />
+      <point x="1125.360681216931" y="1876.0" />
+      <point x="854.0669312169309" y="1876.0" />
+      <point x="135.79999999999995" y="-127.0" />
+    </edge>
+    <edge source="ui.UIManager" target="simulation.Server">
+      <point x="-97.0" y="-127.0" />
+      <point x="621.266931216931" y="1866.0" />
+      <point x="437.58333333333326" y="1866.0" />
+      <point x="437.58333333333326" y="639.0" />
+      <point x="1237.1701388888885" y="639.0" />
+      <point x="-84.0625" y="182.5" />
+    </edge>
+    <edge source="simulation.Scheduler" target="simulation.model.Task">
+      <point x="125.5625" y="-138.5" />
+      <point x="1623.204431216931" y="954.0" />
+      <point x="1987.641931216931" y="954.0" />
+      <point x="1987.641931216931" y="194.0" />
+      <point x="1695.1076388888882" y="194.0" />
+      <point x="34.166666666666515" y="72.0" />
+    </edge>
+    <edge source="simulation.SimulationManager" target="simulation.Scheduler">
+      <point x="28.0" y="-204.5" />
+      <point x="1114.860681216931" y="1281.0" />
+      <point x="1425.891931216931" y="1281.0" />
+      <point x="-71.75" y="138.5" />
+    </edge>
+    <edge source="ui.QueuePanel" target="simulation.model.Task">
+      <point x="-63.0" y="-105.5" />
+      <point x="63.0" y="954.0" />
+      <point x="178.0" y="954.0" />
+      <point x="178.0" y="164.0" />
+      <point x="1585.774305555555" y="164.0" />
+      <point x="-75.16666666666674" y="72.0" />
+    </edge>
+    <edge source="simulation.strategy.Strategy" target="simulation.Server">
+      <point x="-64.75" y="-27.0" />
+      <point x="1642.891931216931" y="639.0" />
+      <point x="1405.2951388888885" y="639.0" />
+      <point x="84.0625" y="182.5" />
+    </edge>
+    <edge source="simulation.strategy.ConcreteStrategyQueue" target="simulation.Server">
+      <point x="-86.33333333333326" y="-27.0" />
+      <point x="1481.3085978835977" y="758.0" />
+      <point x="1482.4895833333333" y="758.0" />
+      <point x="1482.4895833333333" y="649.0" />
+      <point x="1371.6701388888885" y="649.0" />
+      <point x="50.4375" y="182.5" />
+    </edge>
+    <edge source="ui.UIManager" target="ui.SetupScreen">
+      <point x="-19.40000000000009" y="-127.0" />
+      <point x="698.8669312169309" y="1846.0" />
+      <point x="529.5833333333333" y="1846.0" />
+      <point x="-70.5" y="237.5" />
+    </edge>
+    <edge source="simulation.SimulationManager" target="simulation.model.SimulationVariables">
+      <point x="-140.0" y="-204.5" />
+      <point x="946.860681216931" y="1321.0" />
+      <point x="695.2083333333333" y="1321.0" />
+      <point x="36.9375" y="104.5" />
+    </edge>
+    <edge source="simulation.Scheduler" target="simulation.SelectionPolicy">
+      <point x="-53.8125" y="-138.5" />
+      <point x="1443.829431216931" y="934.0" />
+      <point x="1292.079431216931" y="934.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="simulation.strategy.Strategy" target="simulation.model.Task">
+      <point x="64.74999999999994" y="-27.0" />
+      <point x="1772.391931216931" y="214.0" />
+      <point x="1667.774305555555" y="214.0" />
+      <point x="6.8333333333332575" y="72.0" />
+    </edge>
+    <edge source="simulation.strategy.ConcreteStrategyQueue" target="simulation.model.Task">
+      <point x="0.0" y="-27.0" />
+      <point x="1567.641931216931" y="214.0" />
+      <point x="1654.1076388888885" y="214.0" />
+      <point x="-6.8333333333332575" y="72.0" />
+    </edge>
+    <edge source="ui.UIManager" target="ui.SimulationScreen">
+      <point x="-174.60000000000014" y="-127.0" />
+      <point x="543.6669312169308" y="1886.0" />
+      <point x="130.83333333333326" y="1886.0" />
+      <point x="-98.75" y="94.0" />
+    </edge>
+    <edge source="ui.SimulationScreen" target="ui.QueuePanel">
+      <point x="-164.58333333333326" y="-94.0" />
+      <point x="65.0" y="1321.0" />
+      <point x="42.0" y="1321.0" />
+      <point x="-84.0" y="105.5" />
+    </edge>
+    <edge source="ui.UIManager" target="simulation.SimulationManager">
+      <point x="58.200000000000045" y="-127.0" />
+      <point x="776.466931216931" y="1856.0" />
+      <point x="971.360681216931" y="1856.0" />
+      <point x="-115.5" y="204.5" />
+    </edge>
+    <edge source="ui.SetupScreen" target="simulation.model.SimulationVariables">
+      <point x="-70.5" y="-237.5" />
+      <point x="529.5833333333333" y="1321.0" />
+      <point x="645.9583333333333" y="1321.0" />
+      <point x="-12.3125" y="104.5" />
+    </edge>
+    <edge source="simulation.strategy.ConcreteStrategyQueue" target="simulation.strategy.Strategy">
+      <point x="86.33333333333337" y="-27.0" />
+      <point x="1653.9752645502645" y="758.0" />
+      <point x="1621.3085978835977" y="758.0" />
+      <point x="-86.33333333333337" y="27.0" />
+    </edge>
+    <edge source="simulation.SimulationManager" target="simulation.model.Task">
+      <point x="84.0" y="-204.5" />
+      <point x="1170.860681216931" y="1301.0" />
+      <point x="1998.641931216931" y="1301.0" />
+      <point x="1998.641931216931" y="184.0" />
+      <point x="1708.774305555555" y="184.0" />
+      <point x="47.83333333333326" y="72.0" />
+    </edge>
+    <edge source="ui.UIManager" target="simulation.model.SimulationVariables">
+      <point x="-58.200000000000045" y="-127.0" />
+      <point x="660.0669312169309" y="1856.0" />
+      <point x="448.58333333333326" y="1856.0" />
+      <point x="448.58333333333326" y="1311.0" />
+      <point x="621.3333333333333" y="1311.0" />
+      <point x="-36.9375" y="104.5" />
+    </edge>
+    <edge source="simulation.strategy.ConcreteStrategyTime" target="simulation.strategy.Strategy">
+      <point x="-86.33333333333331" y="-27.0" />
+      <point x="1761.3085978835977" y="758.0" />
+      <point x="1793.9752645502642" y="758.0" />
+      <point x="86.33333333333326" y="27.0" />
+    </edge>
+    <edge source="simulation.strategy.ConcreteStrategyTime" target="simulation.Server">
+      <point x="0.0" y="-27.0" />
+      <point x="1847.641931216931" y="758.0" />
+      <point x="1866.5457341269841" y="758.0" />
+      <point x="1866.5457341269841" y="629.0" />
+      <point x="1438.9201388888885" y="629.0" />
+      <point x="117.6875" y="182.5" />
+    </edge>
+    <edge source="simulation.SimulationManager" target="file.FileManager">
+      <point x="-28.0" y="-204.5" />
+      <point x="1058.860681216931" y="1281.0" />
+      <point x="874.026752645502" y="1281.0" />
+      <point x="874.026752645502" y="954.0" />
+      <point x="879.276752645502" y="954.0" />
+      <point x="-81.5" y="38.0" />
+    </edge>
+    <edge source="ui.SimulationScreen" target="simulation.Server">
+      <point x="32.91666666666674" y="-94.0" />
+      <point x="262.5" y="629.0" />
+      <point x="1203.5451388888885" y="629.0" />
+      <point x="-117.6875" y="182.5" />
+    </edge>
+    <edge source="file.FileManagerImpl" target="file.FileManager">
+      <point x="0.0" y="-38.0" />
+      <point x="1047.526752645502" y="954.0" />
+      <point x="1042.276752645502" y="954.0" />
+      <point x="81.5" y="38.0" />
+    </edge>
+    <edge source="simulation.Scheduler" target="simulation.strategy.Strategy">
+      <point x="53.8125" y="-138.5" />
+      <point x="1551.454431216931" y="934.0" />
+      <point x="1707.641931216931" y="934.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="simulation.Scheduler" target="simulation.strategy.ConcreteStrategyQueue">
+      <point x="17.9375" y="-138.5" />
+      <point x="1515.579431216931" y="924.0" />
+      <point x="1567.641931216931" y="924.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="simulation.SimulationManager" target="file.FileManagerImpl">
+      <point x="0.0" y="-204.5" />
+      <point x="1086.860681216931" y="1271.0" />
+      <point x="1047.526752645502" y="1271.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="simulation.strategy.ConcreteStrategyTime" target="simulation.model.Task">
+      <point x="86.33333333333337" y="-27.0" />
+      <point x="1933.9752645502645" y="758.0" />
+      <point x="1922.9375" y="758.0" />
+      <point x="1922.9375" y="204.0" />
+      <point x="1681.4409722222217" y="204.0" />
+      <point x="20.5" y="72.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4706144961084673" x="314.8476666902242" y="521.0803071541666" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
